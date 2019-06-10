@@ -1,0 +1,17 @@
+  <!-- 
+               You need to send data from '../routes/front.router' and make a loop
+               to create a liste of data
+               - https://gist.github.com/DWS-paris/2fbb6ebdbacec0f529a93394ac226df1
+            --> 
+            <section>
+                <article>
+                
+                <ul>   
+                    <!-- Afficher tous les users -->
+                        <% for(let item of userCollection){ %>
+                          <li><%= item.name %></li>
+                        <% }%>
+                 </ul>
+            </article>
+            <article><img src="../img/cover.png" alt=""></article>
+            </section>

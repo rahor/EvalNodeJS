@@ -1,0 +1,10 @@
+<!-- Découpage du front -->
+<%- include('./components/header.ejs', { title: "Accueil" }) %>
+
+        <main>
+                <h2>Liste des utilisateurs</h2>
+                <% include ./components/users.ejs %>
+
+        </main>
+        
+<% include ./components/footer.ejs %>

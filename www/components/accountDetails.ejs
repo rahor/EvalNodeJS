@@ -1,0 +1,12 @@
+<ul>
+        <%
+        for(let item of userCollection){
+            if( connectedUser  == item.email){
+            for(let properties in item){ %>
+            <li>
+                <%= `${properties} = ${item[properties]}` %>
+            </li>
+          <% }}}%>
+        </ul> 
+    
+        <a href="/" class="logOut">Déconnexion</a>
